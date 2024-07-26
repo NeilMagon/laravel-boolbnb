@@ -1,0 +1,282 @@
+@import '~bootstrap/scss/bootstrap';
+
+*{
+    font-family: "Figtree", sans-serif;
+    box-sizing: border-box;
+}
+
+.primary-color{
+    color: #FF5A5F;
+}
+
+.my-header{
+    border-bottom: 1px solid #ececec;
+}
+
+.my-btn-primary{
+    background-color: #FF5A5F;
+    border: none;
+}
+
+.my-primary-border{
+    border: 2px solid #FF5A5F;
+    color: #FF5A5F;
+}
+
+.my-register-btn{
+    border: 2px solid #FF5A5F;
+    color: #FF5A5F;
+}
+
+.my-register-btn:hover{
+    border: inset 1px solid #FF5A5F;
+    background-color: #FF5A5F;
+    color: #fff;
+}
+
+.my-register-btn:focus{
+    border: inset 1px solid #FF5A5F;
+    background-color: #FF5A5F;
+    color: #fff;
+}
+
+.my-btn-primary:hover{
+    box-shadow: 0 0 10px #FF5A5F;
+    background-color: #FF5A5F !important;
+}
+
+.my-btn-primary:focus{
+    box-shadow: 0 0 10px #FF5A5F;
+    background-color: #FF5A5F !important;
+    transform: scale(0.98);
+}
+
+.my-login-header{
+    background-color: #ffffff !important;
+    font-weight: 600;
+    border-color: #ececec !important;
+}
+
+.my-login-card{
+    border-color: #ececec !important;
+}
+
+.forgot-password{
+    color: #212529;
+    text-decoration: none;
+}
+
+.forgot-password:hover{
+    color: #212529;
+    text-decoration: underline;
+}
+
+
+// Dashboard
+
+.dashboard-sidebar{
+    border: 1px solid #ececec;
+}
+
+.dashboard-logout{
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.dashboard-logout:hover{
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #FF5A5F;
+}
+
+.dashboard-collapsed-btn{
+    border-color: #fff;
+}
+
+.dashboard-actual-link{
+    background-color: #ff5a602c;
+    border-radius: 6px;
+    border-left: 8px solid #FF5A5F;
+    font-weight: 600;
+}
+
+.dashboard-link{
+    transition: background-color 0.1s ease, border-radius 0.1s ease;
+}
+
+.dashboard-link:hover{
+    background-color: #ff5a602c;
+    border-radius: 6px;
+    border-left: 8px solid #FF5A5F;
+}
+
+.nav-item:nth-of-type(n+2) .dashboard-link {
+    margin-top: 10px;
+}
+
+.nav-item:last-child .dashboard-link {
+    margin-bottom: 10px;
+}
+
+.my-badge{
+    position: absolute;
+    right: 10px;
+    top: 25%;
+    background-color: #FF5A5F;
+}
+
+.dashboard-table{
+    width: 100%;
+}
+
+
+// apartments index
+
+th{
+    background-color: #404040 !important;
+    color: white !important;
+}
+
+.table{
+    border: 1px solid #ececec;
+}
+
+tr:nth-of-type(odd) td{
+    background-color:  #ebebeb !important;
+}
+
+// apartments show
+.my-arrow-left{
+    font-size: 26px;
+}
+
+.show-header{
+    border-bottom: 1px solid #ececec;
+}
+
+.price-bold{
+    font-weight: 600;
+    color: #212529;
+}
+
+.dashboard-p{
+    font-weight: 400;
+    color: #646464;
+}
+
+/* INIZIO STILE PER RICERCA INDIRIZZO */
+#suggestions {
+    list-style-type: none;
+    border: 1px solid transparent;
+}
+
+#suggestions li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#suggestions li:hover {
+    background-color: #f0f0f0;
+}
+
+.services-container {
+    display: flex;
+    gap: 20px; /* Space between columns */
+}
+
+.services-column {
+    flex: 1;
+}
+
+/* FINE STILE PER RICERCA INDIRIZZO */
+
+// Media query
+
+@media screen and (max-width:767px) {
+    .dashboard-sidebar{
+        border-right: 0;
+    }
+}
+
+// Immagini
+.ms-image-container {
+    max-width: 400px;
+    height: 200px; 
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.ms-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+// Validazione
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 12px;
+    height: 13px;
+}
+
+/* PAYMENT */
+.toast {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 9999;
+  }
+  
+  .bootstrap-basic {
+    background: white;
+  }
+  
+  /* Braintree Hosted Fields styling classes*/
+  .braintree-hosted-fields-focused {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .braintree-hosted-fields-focused.is-invalid {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+  }
+
+  .dashboard-img{
+    max-width: 100%;
+    height: 150px;
+
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+  }
+
+  .container-data-dashboard{
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
